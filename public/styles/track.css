@@ -1,0 +1,33 @@
+body{
+    background-image: none;
+    background-color: ghostwhite;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#table {
+    width: 50%;
+    height: 80%;
+    margin-top: 80px;
+    border-collapse: collapse;
+}
+tr {
+    display: flex;
+    justify-content: space-between;
+}
+.head {
+    background-color: rgb(104, 99, 99);
+    height: 50px;
+    font-size: 1.2em;
+    color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.list {
+    background-color: lightblue;
+    margin: 3px 0;
+    padding: 0 20px;
+}
+

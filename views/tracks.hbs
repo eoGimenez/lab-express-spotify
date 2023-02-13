@@ -1,0 +1,12 @@
+<table id="table">
+  <tr class="head">
+    <th>Title</th>
+    <th>Listen</th>
+  </tr>
+  {{#each items}}
+    <tr class="list">
+      <th><p>{{name}}</p></th>
+      <th><audio controls src="{{preview_url}}"><ahref="{{preview_url}}"></a></audio></th>
+    </tr>
+  {{/each}}
+</table>
