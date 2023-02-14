@@ -69,6 +69,13 @@ app.get("/tracks/:trackId", (req, res, next) => {
     .catch((err) => next(err));
 });
 
+const middlewareError = (err, req, res, next) => {
+    console.log("error: ", err);
+    res.send(`Ha habido un error: ${err}`)
+};
+
+app.use(middlewareError);
+
 app.listen(3000, () =>
   console.log("My Spotify project running on port 3000 🎧 🥁 🎸 🔊")
 );
