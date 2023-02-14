@@ -62,7 +62,7 @@ app.get("/tracks/:trackId", (req, res, next) => {
   spotifyApi
     .getAlbumTracks(track, { limit: 7 })
     .then((album) => {
-      console.log(album.body);
+      //console.log(album.body);
       album.body.styles ="track.css"
       res.render("tracks", album.body);
     })
